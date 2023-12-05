@@ -1,0 +1,25 @@
+:root {
+  /* Coolors Exported Palette - https://coolors.co/fcfcfc-d08234-5b4bf7-fee5d5-6447c9-2726ab-fde948-dccaea-5939c6 */
+
+  /* CSS HEX */
+  --white: #fcfcfcff;
+  --bronze: #d08234ff;
+  --majorelle-blue: #5b4bf7ff;
+  --champagne-pink: #fee5d5ff;
+  --iris: #6447c9ff;
+  --international-klein-blue: #2726abff;
+  --maize: #fde948ff;
+  --thistle: #dccaeaff;
+  --palatinate-blue: #5939c6ff;
+
+  /* CSS HSL */
+  --white: hsla(0, 0%, 99%, 1);
+  --bronze: hsla(30, 62%, 51%, 1);
+  --majorelle-blue: hsla(246, 91%, 63%, 1);
+  --champagne-pink: hsla(23, 95%, 92%, 1);
+  --iris: hsla(253, 55%, 53%, 1);
+  --international-klein-blue: hsla(240, 64%, 41%, 1);
+  --maize: hsla(53, 98%, 64%, 1);
+  --thistle: hsla(274, 43%, 85%, 1);
+  --palatinate-blue: hsla(254, 55%, 50%, 1);
+}
