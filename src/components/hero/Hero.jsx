@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import ReactTyped from "react-typed";
 import "./hero.css";
 import Header from "../header/Header";
@@ -7,8 +8,8 @@ export default function Hero() {
     <section id="hero-section">
       <Header />
       <div id="header-div">
-        <p>
-          <span></span>Manoj M
+        <p className="heading-p">
+          <span className="line-span"></span>Manoj M
         </p>
         <h2>Hello, My name is Manoj.</h2>
         <h2>
@@ -18,6 +19,7 @@ export default function Hero() {
             typeSpeed={100}
             loop
             backSpeed={20}
+            backDelay={300}
             cursorChar="|"
             showCursor={true}
             className="type-letter"

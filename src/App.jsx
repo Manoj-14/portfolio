@@ -1,13 +1,15 @@
 import "./App.css";
-import Header from "./components/header/Header.jsx";
+import AboutMe from "./components/about-me/AboutMe.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import "./palette.css";
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
       <Hero />
+      {/* <main> */}
+      <AboutMe />
+      {/* </main> */}
     </>
   );
 }

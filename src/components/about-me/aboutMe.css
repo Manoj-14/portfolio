@@ -1,0 +1,29 @@
+#about-me-section {
+  height: 100vh;
+  background-image: url("../../assets/lifetime-updates.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  /* justify-content: center; */
+  width: 100%;
+  padding: 4rem 3rem;
+  padding-top: 0;
+}
+
+#about-me-section > div > div:first-child > h4 {
+  font-size: 1.5rem;
+}
+
+#contact-div > h2 {
+  font-size: 5rem;
+}
