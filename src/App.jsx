@@ -6,7 +6,7 @@ import "./palette.css";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
     </>
   );
