@@ -1,0 +1,24 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navItem > a {
+  margin: 0.3rem 0.5rem;
+  padding: 0.1rem 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  border-radius: 2rem;
+  transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+  font-weight: bolder;
+}
+
+.navItem-active,
+.navItem > a:hover,
+.active-scroll-spy {
+  color: var(--iris) !important;
+  background-color: var(--white);
+}

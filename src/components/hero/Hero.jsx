@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import ReactTyped from "react-typed";
 import "./hero.css";
-import Header from "../header/Header";
+import Header from "../header/Header.JSX";
 
 export default function Hero() {
   return (
