@@ -9,7 +9,7 @@
 .navbar > ul {
   position: fixed;
   bottom: 2rem;
-  left: 2.5rem;
+  /* left: 0; */
   /* background-color: var(--majorelle-blue); */
   /* padding: 0.2rem 2rem; */
   background: rgba(91, 75, 247, 0.9);

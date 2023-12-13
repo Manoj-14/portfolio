@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   background-image: linear-gradient(to right, var(--white), white);
@@ -15,6 +18,7 @@ body {
   height: 2px;
   display: inline-block;
   background-color: var(--majorelle-blue);
+  margin: 0.5rem;
 }
 
 .heading-p {
@@ -64,4 +68,12 @@ body::-webkit-scrollbar-thumb {
     color-stop(0.72, var(--iris)),
     color-stop(0.86, var(--iris))
   );
+}
+.icons {
+  display: inline;
+  margin: 0.5rem;
+}
+.icon-parent {
+  display: flex;
+  place-items: center;
 }

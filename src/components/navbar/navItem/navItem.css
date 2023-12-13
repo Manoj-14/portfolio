@@ -13,7 +13,7 @@ a {
   color: var(--white);
   border-radius: 2rem;
   transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
-  font-weight: bolder;
+  font-weight: 50;
 }
 
 .navItem-active,

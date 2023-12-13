@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import ReactTyped from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import "./hero.css";
 import Header from "../header/Header.JSX";
 
@@ -14,16 +14,19 @@ export default function Hero() {
         <h2>Hello, My name is Manoj.</h2>
         <h2>
           I'm a{" "}
-          <ReactTyped
-            strings={["Full Stack Developer", "Cloud Developer", "Designer"]}
-            typeSpeed={100}
-            loop
-            backSpeed={20}
-            backDelay={300}
-            cursorChar="|"
-            showCursor={true}
+          <TypeAnimation
+            sequence={[
+              "Full Stack Developer",
+              1000,
+              "Cloud Developer",
+              1000,
+              "Designer",
+              1000,
+            ]}
+            speed={200}
+            repeat={Infinity}
             className="type-letter"
-          ></ReactTyped>
+          ></TypeAnimation>
         </h2>
       </div>
       <div id="hero-image-div">
