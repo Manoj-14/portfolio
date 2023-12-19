@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { TypeAnimation } from "react-type-animation";
 import "./hero.css";
-import Header from "../header/Header.JSX";
+import Header from "../header/Header.jsx";
 
 export default function Hero() {
   return (
