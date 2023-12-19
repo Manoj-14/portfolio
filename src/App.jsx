@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutMe from "./components/about-me/AboutMe.jsx";
+import Contact from "./components/contact/Contact.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Project from "./components/projects/Project.jsx";
@@ -15,6 +16,7 @@ function App() {
       <AboutMe id="about-me" />
       <Project />
       {/* </main> */}
+      <Contact />
       <Navbar />
       {/* </ScrollSpy> */}
     </>

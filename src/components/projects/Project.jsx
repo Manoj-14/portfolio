@@ -4,7 +4,6 @@ import { FaArrowRight } from "react-icons/fa";
 import "./project.css";
 
 export default function Project() {
-  PROJECTS.map((pro) => console.log(pro.title));
   return (
     <>
       <div className="" id="project">

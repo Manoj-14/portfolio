@@ -1,0 +1,83 @@
+:focus {
+  outline: none;
+}
+input,
+textarea {
+  font: 15px/24px "Muli", sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  outline: none !important;
+}
+
+.col-3 {
+  float: left;
+  width: 70%;
+  margin: 40px 3%;
+  position: relative;
+}
+
+input,
+textarea {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-16 {
+  border: 0;
+  /* padding: 4px 0; */
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background-color: transparent !important;
+  outline: none;
+}
+
+.effect-16 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--majorelle-blue);
+  transition: 0.4s;
+}
+
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+.effect-16 ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect-16:focus ~ label,
+.has-content.effect-16 ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: var(--majorelle-blue);
+  transition: 0.3s;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.message-btn {
+  float: right;
+}
