@@ -27,3 +27,8 @@
 #contact-div > h2 {
   font-size: 5rem;
 }
+
+#contact-btn {
+  width: 100%;
+  height: 100%;
+}

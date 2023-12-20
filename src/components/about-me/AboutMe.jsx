@@ -1,4 +1,6 @@
+import { BrowserRouter } from "react-router-dom";
 import "./aboutMe.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function AboutMe() {
   return (
@@ -14,7 +16,11 @@ export default function AboutMe() {
         <div id="contact-div">
           <h2>Think.. Make..</h2>
           <h2>Solve..</h2>
-          <button className="button contact-btn">Contact</button>
+          <BrowserRouter>
+            <Link to="#contact" smooth className="button" id="contact-btn">
+              Contact
+            </Link>
+          </BrowserRouter>
         </div>
       </div>
     </section>

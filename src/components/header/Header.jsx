@@ -1,5 +1,6 @@
 import "./header.css";
 import logo from "../../../public/vite.svg";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -10,10 +11,26 @@ export default function Header() {
       <div id="links">
         <ul>
           <li>
-            <a href="#">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/manojm1425"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-parent"
+            >
+              <FaLinkedin className="icons" />
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a href="#">GitHub</a>
+            <a
+              href="https://github.com/Manoj-14"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-parent"
+            >
+              <FaGithub className="icons" />
+              GitHub
+            </a>
           </li>
         </ul>
       </div>

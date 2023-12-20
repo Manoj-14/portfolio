@@ -54,7 +54,7 @@ export default function Contact() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/manojm1425"
+                href="https://www.instagram.com/manojm_14/"
                 target="_blank"
                 rel="noreferrer"
               >
