@@ -2,8 +2,28 @@
 import { TypeAnimation } from "react-type-animation";
 import "./hero.css";
 import Header from "../header/Header.jsx";
+import { useEffect, useRef } from "react";
+import { TweenMax, Power3 } from "gsap/gsap-core.js";
+import { gsap, CSSPlugin } from "gsap/all";
+gsap.registerPlugin(CSSPlugin);
 
 export default function Hero() {
+  // console.log("Hero");
+  let heroImage = useRef(null);
+  useEffect(() => {
+    TweenMax.from(heroImage, 1, {
+      opacity: 1,
+      y: -800,
+      ease: Power3.easeInOut,
+      delay: 0,
+    });
+    TweenMax.to(heroImage, 3, {
+      opacity: 1,
+      y: 0,
+      ease: Power3.easeInOut,
+    });
+  }, []);
+
   return (
     <section id="hero-section">
       <Header />
@@ -29,7 +49,7 @@ export default function Hero() {
           ></TypeAnimation>
         </h2>
       </div>
-      <div id="hero-image-div">
+      <div id="hero-image-div" ref={(el) => (heroImage = el)}>
         {/* <img src={HeroImage} id="hero-image" alt="Hero image" /> */}
       </div>
     </section>

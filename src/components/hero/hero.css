@@ -1,4 +1,5 @@
 #hero-section {
+  overflow: hidden;
   height: 100vh;
   display: flex;
   background-image: url(../../assets/hero-image.png);
