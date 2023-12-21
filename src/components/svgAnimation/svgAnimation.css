@@ -1,0 +1,9 @@
+#wrap {
+  position: relative;
+}
+svg {
+  position: relative;
+  width: 600px;
+  overflow: visible;
+  margin-top: 0;
+}
