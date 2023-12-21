@@ -3,26 +3,57 @@ import { TypeAnimation } from "react-type-animation";
 import "./hero.css";
 import Header from "../header/Header.jsx";
 import { useEffect, useRef } from "react";
-import { TweenMax, Power3 } from "gsap/gsap-core.js";
-import { gsap, CSSPlugin } from "gsap/all";
-gsap.registerPlugin(CSSPlugin);
+import { TweenMax } from "gsap/gsap-core.js";
+import { Power3 } from "gsap";
+import UsrImage from "../../assets/demo-img.jpg";
 
 export default function Hero() {
-  // console.log("Hero");
-  let heroImage = useRef(null);
+  let horBarOne = useRef(null);
+  let horBarTwo = useRef(null);
+  let horBarThree = useRef(null);
+  let horBarFour = useRef(null);
+  let verBarOne = useRef(null);
+  let verBarTwo = useRef(null);
+  let verBarThree = useRef(null);
+  let verBarFour = useRef(null);
   useEffect(() => {
-    TweenMax.from(heroImage, 1, {
-      opacity: 1,
-      y: -800,
-      ease: Power3.easeInOut,
-      delay: 0,
-    });
-    TweenMax.to(heroImage, 3, {
-      opacity: 1,
-      y: 0,
-      ease: Power3.easeInOut,
-    });
-  }, []);
+    TweenMax.staggerFrom(
+      [
+        horBarOne,
+        horBarTwo,
+        horBarThree,
+        horBarFour,
+        verBarOne,
+        verBarTwo,
+        verBarThree,
+        verBarFour,
+      ],
+      2,
+      {
+        opacity: 0,
+        y: -500,
+        ease: Power3.easeOut,
+      }
+    );
+    TweenMax.staggerTo(
+      [
+        horBarOne,
+        horBarTwo,
+        horBarThree,
+        horBarFour,
+        verBarOne,
+        verBarTwo,
+        verBarThree,
+        verBarFour,
+      ],
+      2,
+      {
+        opacity: 1,
+        y: 0,
+        ease: Power3.easeOut,
+      }
+    );
+  });
 
   return (
     <section id="hero-section">
@@ -49,8 +80,54 @@ export default function Hero() {
           ></TypeAnimation>
         </h2>
       </div>
-      <div id="hero-image-div" ref={(el) => (heroImage = el)}>
-        {/* <img src={HeroImage} id="hero-image" alt="Hero image" /> */}
+      <div id="hero-image-div">
+        <div className="vertical-bar">
+          <div
+            className="bar-div"
+            ref={(bar) => (verBarOne = bar)}
+            id="bar-div-one"
+          ></div>
+          <div
+            className="bar-div"
+            ref={(bar) => (verBarTwo = bar)}
+            id="bar-div-two"
+          ></div>
+          <div
+            className="bar-div"
+            ref={(bar) => (verBarThree = bar)}
+            id="bar-div-three"
+          ></div>
+          <div
+            className="bar-div"
+            ref={(bar) => (verBarFour = bar)}
+            id="bar-div-four"
+          ></div>
+        </div>
+        <div id="hero-image">
+          <img src={UsrImage} alt="User Image" />
+        </div>
+        <div className="horizontal-bar">
+          <div
+            className="bar-div"
+            ref={(bar) => (horBarOne = bar)}
+            id="bar-div-one"
+          ></div>
+          <div
+            className="bar-div"
+            ref={(bar) => (horBarTwo = bar)}
+            id="bar-div-two"
+          ></div>
+          <div
+            className="bar-div"
+            ref={(bar) => (horBarThree = bar)}
+            id="bar-div-three"
+          ></div>
+          <div
+            className="bar-div"
+            ref={(bar) => (horBarFour = bar)}
+            id="bar-div-four"
+          ></div>
+        </div>
       </div>
     </section>
   );
